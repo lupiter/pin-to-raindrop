@@ -42,7 +42,7 @@ def copy_pin(pin, collection, collection_exists, section=None):
                 matches = Raindrop.search(raindrop_api, collection=collection, word=link)
                 for match in matches:
                     if match.link == link:
-                        print(f"Skipping already coppied pin: {description} link:{link} img:{img}")
+                        print(f"Skipping already copied pin: {description} link:{link} img:{img}")
                         should_copy = False
                         break
             if should_copy:
